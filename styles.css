@@ -1,0 +1,51 @@
+﻿.main {
+    margin: 0 auto;
+    width:1000px;
+    height:500px;
+    /background:#ffd800;
+}
+.dial {
+    width:500px;
+    height:500px;
+    /background:#b6ff00;
+    float:right;
+}
+
+#expression {
+    border:none;
+    border-bottom:1px solid #808080;
+    outline:none;
+    width: 465px;
+    height:27px;
+    padding-left:5px;
+    font-family:monospace;
+    font-size:16px;
+    float:right;
+    margin:0 2px 0 0;
+}
+.plot-btn {
+    width:50px;
+    height:30px;
+    float:right;
+    background:#000000;
+    color:#ffffff;
+    outline:none;
+    border:none;
+}
+.plot-btn:hover {
+    background:#808080;
+    cursor:pointer;
+}
+
+.numbers-tab td {
+    width:55px;
+    height:55px;
+    background:#e2e2e2;
+    text-align:center;
+    font-family:monospace;
+    font-size:16px;
+}
+.numbers-tab td:hover {
+    background:#ffd800;
+    cursor:pointer;
+}
