@@ -8,67 +8,68 @@
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body onload="makeAxes()">
-    <div class="main">
-        <div style="float:left">
-            <canvas id="canvas" width="500" height="500"></canvas>
-        </div>
-        <div class="dial">
-            <div>
-                <input id="expression" type="text" name="expression" value="" placeholder="expression" />
-                <input id="expression_js" type="hidden" value="" />
-            </div>
-            <div>
-                <table class="numbers-tab" style="float:right">
-                    <tr>
-                        <td onclick="add(this.textContent)">1</td>
-                        <td onclick="add(this.textContent)">2</td>
-                        <td onclick="add(this.textContent)">3</td>
-                        <td onclick="add(this.textContent)">0</td>
-                        <td onclick="add(this.textContent)">abs</td>
-                        <td onclick="add(this.textContent)">acos</td>
-                        <td onclick="add(this.textContent)">asin</td>
-                        <td onclick="del()">&lt;&lt;</td>
-                    </tr>
-                    <tr>
-                        <td onclick="add(this.textContent)">4</td>
-                        <td onclick="add(this.textContent)">5</td>
-                        <td onclick="add(this.textContent)">6</td>
-                        <td onclick="add(this.textContent)">(</td>
-                        <td onclick="add(this.textContent)">atan</td>
-                        <td onclick="add(this.textContent)">cos</td>
-                        <td onclick="add(this.textContent)">sin</td>
-                        <td onclick="c()">C</td>
-                    </tr>
-                    <tr>
-                        <td onclick="add(this.textContent)">7</td>
-                        <td onclick="add(this.textContent)">8</td>
-                        <td onclick="add(this.textContent)">9</td>
-                        <td onclick="add(this.textContent)">)</td>
-                        <td onclick="add(this.textContent)">tan</td>
-                        <td onclick="add(this.textContent)">log</td>
-                        <td onclick="add(this.textContent)">exp</td>
-                        <td onclick="add(this.textContent)">pow</td>
-                    </tr>
-                    <tr>
-                        <td onclick="add(this.textContent)">+</td>
-                        <td onclick="add(this.textContent)">-</td>
-                        <td onclick="add(this.textContent)">*</td>
-                        <td onclick="add(this.textContent)">/</td>
-                        <td onclick="add(this.textContent)">.</td>
-                        <td onclick="add(this.textContent)">Pi</td>
-                        <td onclick="add(this.textContent)">e</td>
-                        <td onclick="add(this.textContent)">sqrt</td>
-                    </tr>
-                    <tr>
-                        <td onclick="add(this.textContent)">x</td>
-                        <td onclick="add(this.textContent)">,</td>
-                        <td onclick="draw()" colspan="6">Plot</td>
-                    </tr>
-                </table>
-            </div>
+    <main>
 
+        <h1>Simple function drawer</h1>
+        <input id="expression" type="text" name="expression" value="" placeholder="type an expression here" />
+        <input id="expression_js" type="hidden" value="" />
+
+        <div class="dial">
+            <table class="numbers-tab" style="float:right">
+                <tr>
+                    <td onclick="add(this.textContent)">1</td>
+                    <td onclick="add(this.textContent)">2</td>
+                    <td onclick="add(this.textContent)">3</td>
+                    <td onclick="add(this.textContent)">0</td>
+                    <td onclick="add(this.textContent)">abs</td>
+                    <td onclick="add(this.textContent)">acos</td>
+                    <td onclick="add(this.textContent)">asin</td>
+                    <td onclick="del()">&lt;&lt;</td>
+                </tr>
+                <tr>
+                    <td onclick="add(this.textContent)">4</td>
+                    <td onclick="add(this.textContent)">5</td>
+                    <td onclick="add(this.textContent)">6</td>
+                    <td onclick="add(this.textContent)">(</td>
+                    <td onclick="add(this.textContent)">atan</td>
+                    <td onclick="add(this.textContent)">cos</td>
+                    <td onclick="add(this.textContent)">sin</td>
+                    <td onclick="c()">C</td>
+                </tr>
+                <tr>
+                    <td onclick="add(this.textContent)">7</td>
+                    <td onclick="add(this.textContent)">8</td>
+                    <td onclick="add(this.textContent)">9</td>
+                    <td onclick="add(this.textContent)">)</td>
+                    <td onclick="add(this.textContent)">tan</td>
+                    <td onclick="add(this.textContent)">log</td>
+                    <td onclick="add(this.textContent)">exp</td>
+                    <td onclick="add(this.textContent)">pow</td>
+                </tr>
+                <tr>
+                    <td onclick="add(this.textContent)">+</td>
+                    <td onclick="add(this.textContent)">-</td>
+                    <td onclick="add(this.textContent)">*</td>
+                    <td onclick="add(this.textContent)">/</td>
+                    <td onclick="add(this.textContent)">.</td>
+                    <td onclick="add(this.textContent)">Pi</td>
+                    <td onclick="add(this.textContent)">e</td>
+                    <td onclick="add(this.textContent)">sqrt</td>
+                </tr>
+                <tr>
+                    <td onclick="add(this.textContent)">x</td>
+                    <td onclick="add(this.textContent)">,</td>
+                    <td onclick="draw()" colspan="6">Plot</td>
+                </tr>
+            </table>
+            <div class="author">
+                <a href="http://serkalayder.github.io/">Sergii Kalayda</a> 2014
+            </div>
         </div>
-    </div>
+
+        <canvas id="canvas" width="500" height="500"></canvas>
+        
+    </main>
 
 </body>
 </html>
